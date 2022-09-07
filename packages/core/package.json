@@ -4,12 +4,16 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "rimraf ./lib/ && tsc"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "utils": "workspace:*"
+    "utils": "workspace:*",
+    "typescript": "~4.8.2"
+  },
+  "devDependencies": {
+    "rimraf": "^3.0.2"
   }
 }
